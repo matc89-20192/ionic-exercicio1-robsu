@@ -8,13 +8,10 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h3>Ionic - Exercício 1 - Alô, Mundo!</h3>
+  <ion-input id="editNome" type="text"[(ngModel)]="nome" placeholder="Digite seu nome..."></ion-input>
 
-  <img src="assets/icon/favicon.ico" alt="" />
+  <button (click)='troca();' id="btnCumprimentar">Cumprimentar</button>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-label id="labelMensagem">Alô, Mundo!</ion-label>
 </ion-content>
