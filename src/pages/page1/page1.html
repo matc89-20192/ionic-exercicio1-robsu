@@ -9,9 +9,9 @@
 
 <ion-content padding>
   <h3>Ionic - Exercício 1 - Alô, Mundo!</h3>
-  <ion-input id="editNome" type="text"[(ngModel)]="nome" placeholder="Digite seu nome..."></ion-input>
+  <ion-input id="editNome" type="text"[(ngModel)]="nome" placeholder="Digite seu nome..." autofocus></ion-input>
 
-  <button (click)='troca();' id="btnCumprimentar">Cumprimentar</button>
+  <button ion-button block color="primary" (click)='troca();' id="btnCumprimentar">Cumprimentar</button>
 
-  <ion-label id="labelMensagem">Alô, Mundo!</ion-label>
+  <ion-label color="dark" id="labelMensagem">Alô, Mundo!</ion-label>
 </ion-content>
